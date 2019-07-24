@@ -1,4 +1,4 @@
-package com.smoothstack.lms.orchestrator.service;
+package com.smoothstack.lms.orchestrator.admin.service;
 
 import java.util.List;
 

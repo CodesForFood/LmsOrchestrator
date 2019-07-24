@@ -1,4 +1,4 @@
-package com.smoothstack.lms.orchestrator.admincontroller;
+package com.smoothstack.lms.orchestrator.admin.controller;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.smoothstack.lms.orchestrator.admin.service.BookCopyService;
 import com.smoothstack.lms.orchestrator.entity.BookCopies;
-import com.smoothstack.lms.orchestrator.service.BookCopyService;
 
 @RestController
 @RequestMapping("/admin")

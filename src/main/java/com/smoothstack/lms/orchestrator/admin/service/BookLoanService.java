@@ -1,4 +1,4 @@
-package com.smoothstack.lms.orchestrator.service;
+package com.smoothstack.lms.orchestrator.admin.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

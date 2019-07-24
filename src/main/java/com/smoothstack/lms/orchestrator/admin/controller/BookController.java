@@ -1,4 +1,4 @@
-package com.smoothstack.lms.orchestrator.admincontroller;
+package com.smoothstack.lms.orchestrator.admin.controller;
 
 import java.util.List;
 
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.smoothstack.lms.orchestrator.admin.service.BookService;
 import com.smoothstack.lms.orchestrator.entity.Book;
-import com.smoothstack.lms.orchestrator.service.BookService;
 
 @RestController
 @RequestMapping("/admin")
@@ -27,8 +27,7 @@ public class BookController {
 	private final String JSON = "application/json";
 	
 	@Autowired
-	private BookService bookService;
-	
+	private BookService bookService;	
 	
 	@GetMapping(value ="/books", produces = { XML, JSON })
 	public ResponseEntity<List<Book>> getAllBooks(@RequestParam(required = false, defaultValue = "100") int size) {		

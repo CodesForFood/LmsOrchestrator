@@ -1,4 +1,4 @@
-package com.smoothstack.lms.orchestrator.admincontroller;
+package com.smoothstack.lms.orchestrator.admin.controller;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
+import com.smoothstack.lms.orchestrator.admin.service.BranchService;
 import com.smoothstack.lms.orchestrator.entity.LibraryBranch;
-import com.smoothstack.lms.orchestrator.service.BranchService;
 
 public class BranchController {
 	
